@@ -7,12 +7,11 @@ using namespace cv;
 using namespace std;
 
 
-///---------------------------color detector------trackbar-----220511------/////////
+///-------color detector------trackbar-----220511------/////////
 
 Mat imghsv, mask;
 int hmin = 0, smin = 0, vmin = 0;
 int hmax = 179, smax = 255, vmax = 255;
-//ÕâÀïÊÇ¼ì²â³ö³ÈÉ«Í¨µÀ£¬µ«Ò»¸ö¸ö²âÌ«Âé·³ËùÒÔÓÃtrackbarĞ´Ò»¸öwhile///
 
 
 void main() {
@@ -40,12 +39,12 @@ void main() {
 
 		inRange(imghsv, lower, upper, mask);
 
-		cout << hmin << "," << smin << "," << vmin << "," << hmax << "," << smax << "," << vmax << endl;//ÔÚ¿ØÖÆÌ¨ÖĞÏÔÊ¾µ÷ÊÔµÄÊıÖµ
+		cout << hmin << "," << smin << "," << vmin << "," << hmax << "," << smax << "," << vmax << endl;//åœ¨æ§åˆ¶å°ä¸­æ˜¾ç¤ºè°ƒè¯•çš„æ•°å€¼
 
 		imshow("Image", img);
 		imshow("imghsv", imghsv);
 		imshow("image mask", mask);
-		waitKey(1);//¼Ó¸öwhileÑ­»·£¬°Ñwaitkey¸Ä³É1£»whileÖ®Íâ½¨¸ö´°¿ÚºÍbar,Õâ¸öÍ¦¼òÒ×µÄ//
+		waitKey(1);
 
 
 	}
